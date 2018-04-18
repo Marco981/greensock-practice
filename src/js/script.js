@@ -11,7 +11,7 @@ window.onload = function() {
 			button.setTimeout
 		}
 		tl
-			.staggerFrom(firstScreenText,.7,{scale:0,autoAlpha:0,ease: Back.easeOut.config(1.7)},.7)
+			.staggerFrom(firstScreenText,.7,{scale:0,autoAlpha:0,ease: Bounce.easeOut,},.7)
 			.to([firstScreen,firstScreenText], 1.5, {autoAlpha:0},"+=.2")
 			.from(textDiv, .5, {autoAlpha:0,x:-200})
 			.from(titleDiv, 1, {opacity:0})
