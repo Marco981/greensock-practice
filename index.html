@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deviceful Test</title>
+	<link rel="stylesheet" type="text/css" href="src/style.css">
+</head>
+<body>
+	<figure id="banner">
+		<div class="first">
+			<h1>History</h1>
+			<h1>Passion</h1>
+			<h1>Beautiful Landscapes</h1>
+		</div>
+		<div class="text-div">
+			<img class="logo" src="asset/img/logo.png" alt="logo">
+			<div class="title-div">
+				<h2>Discover</h2>
+				<h1>Naples</h1>
+			</div>
+			<div class="points">
+				<p>Book today and receive:</p>
+				<h1>250</h1>
+				<h4>Bonus Miles</h4>
+			</div>
+			<a href="" class="button">SEARCH HOTELS <span>></span></a>
+		</div>
+	</figure>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenLite.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/CSSPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TimelineLite.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/easing/EasePack.min.js"></script>
+	<script type="text/javascript">
+		let firstScreen = document.querySelector(".first"),
+			firstScreenText = document.querySelectorAll(".first h1"),
+			textDiv = document.querySelector(".text-div"),
+			logo = document.querySelector(".logo"),
+			titleDiv = document.querySelector(".title-div"),
+			pointsDiv = document.querySelector(".points"),
+			button = document.querySelector(".button"),
+			tl = new TimelineLite();
+		tl
+			.staggerFrom(firstScreenText,1,{scale:0,autoAlpha:0,ease:Power1.easeOut}, 1)
+			.to(firstScreen, 1, {autoAlpha:0},"+=1")
+			.from(textDiv, .5, {autoAlpha:0,x:-200})
+			.from(titleDiv, 1, {opacity:0})
+			.from(pointsDiv, 1, {autoAlpha:0,scale:0,ease: Elastic.easeOut.config(1, .75)})
+			.from([logo,button], 1, {opacity:0})
+			// .from(button, 1,{opacity:0})
+	</script>
+</body>
+</html>

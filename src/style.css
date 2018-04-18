@@ -1,0 +1,115 @@
+@font-face {
+	font-family:Omnes;
+	src:url(../asset/font/Omnes.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#banner {
+	width: 300px;
+	height: 250px;
+	background: url("../asset/img/gulf.jpg");
+	font-family: Omnes;
+	border: 1px solid black;
+	position: relative;
+}
+
+.first {
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgb(255,255,102);
+	color: cadetblue;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.first h1:first-child {
+	padding-top: 1rem;
+}
+
+.first h1 {
+	padding-bottom: 1rem;
+}
+
+.text-div {
+	width: 60%;
+	height: 100%;
+	background:rgba(255,255,102,.7);
+	position: relative;
+}
+
+.title-div,
+.points {
+	left:20px;
+}
+
+.title-div {
+	position:absolute;
+	top: 50px;
+}
+
+.title-div h2 {
+	font-weight: 100;
+	padding-bottom: .2rem;
+}
+
+ h1 {
+	font-size: 2.5rem;
+	letter-spacing: 0.1rem;
+}
+
+.logo {
+	position: absolute;
+    width: 77px;
+    height: auto;
+    top: -9px;
+    right: 5px;
+}
+
+.points {
+	position: absolute;
+    top: 135px;
+}
+
+.points p {
+	font-size:.7rem;
+	padding-bottom: .3rem;
+}
+
+.points h1 {
+	display: inline-block;
+	width: 50%;
+}
+
+.points h4 {
+	display: inline-block;
+	width: 40%;
+	font-size:0.9rem;
+}
+
+.button {
+	position: absolute;
+    bottom: 12px;
+    left:12px;
+    right: 12px;
+    font-size: .7rem;
+    padding:.5rem 1rem;
+    text-decoration: none;
+    background-color: white;
+    text-align: center;
+    color: cadetblue;
+}
+
+.button span {
+	padding-left: .2rem;
+}
